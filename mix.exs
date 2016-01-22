@@ -20,7 +20,6 @@ defmodule MemcachedTest.Mixfile do
     [mod: {MemcachedTest, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
                     :phoenix_ecto, :mariaex,
-                    :plug_session_memcached,
 
                   ]]
   end
@@ -40,8 +39,6 @@ defmodule MemcachedTest.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
      {:cowboy, "~> 1.0"},
-     {:plug_session_memcached, "~> 0.3.2" },
-     {:mcd, github: "EchoTeam/mcd"},
      {:exrm, "~> 1.0.0-rc7"}
 
    ]

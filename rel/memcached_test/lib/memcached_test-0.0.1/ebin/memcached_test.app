@@ -17,5 +17,4 @@
                         'Elixir.MemcachedTest.Web']},
               {mod,{'Elixir.MemcachedTest',[]}},
               {applications,[kernel,stdlib,elixir,phoenix,phoenix_html,cowboy,
-                             logger,gettext,phoenix_ecto,mariaex,
-                             plug_session_memcached]}]}.
+                             logger,gettext,phoenix_ecto,mariaex]}]}.
