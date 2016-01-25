@@ -19,10 +19,12 @@ defmodule MemcachedTest.Mixfile do
   def application do
     [mod: {MemcachedTest, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :mariaex,
-                    :plug_session_memcached,
+                    :phoenix_ecto, :mariaex, :lager, :corman
 
-                  ]]
+                  ],
+    included_applications: [
+      :plug_session_memcached
+    ]]
   end
 
   # Specifies which paths to compile per environment.
